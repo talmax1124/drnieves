@@ -1,0 +1,47 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon";
+
+const features = [
+  {
+    title: "Broadcasts",
+    description:
+      "Watch our broadcasts on our YouTube channel, and subscribe to stay up to date!",
+    icon: "fas fa-video",
+  },
+  {
+    title: "Podcasts",
+    description:
+      "Listen in to our weekly podcast, Know the Neo, with staff in our school!",
+    icon: "fas fa-microphone",
+  },
+  {
+    title: "Articles",
+    description:
+      "Read on our website about the latest news and events in our school!",
+    icon: "fas fa-newspaper",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    What We Specialize In
+  </h2>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0 flex items-center justify-center">
+          <i class={item.icon} style="color: white;"/>
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
