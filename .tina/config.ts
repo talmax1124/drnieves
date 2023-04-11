@@ -1,7 +1,7 @@
 import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "master";
+const branch =  "master" || process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF;
 
 const tinaClient =
   "2b333a57-74f3-408e-8429-cf45c2f61392" || process.env.TINA_CLIENT;
