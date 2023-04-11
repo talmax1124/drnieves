@@ -6,7 +6,7 @@ const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 const tinaClient =
   "ea0fd6b0-29c8-4de1-a222-9b344c401363" || process.env.TINA_CLIENT;
 const tinaToken =
-  "25c2ccc791f9176d7b3207c35ee066482bd6da34" || process.env.TINA_TOKEN;
+  "254e2d0bca3b45792314b4ea97a383dec736f2fc" || process.env.TINA_TOKEN;
 
 export default defineConfig({
   branch,
