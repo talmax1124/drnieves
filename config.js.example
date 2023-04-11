@@ -4,9 +4,9 @@ import { defineConfig } from "tinacms";
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
 const tinaClient =
-  "fa9492be-4d1c-45d2-a540-fb1858205bc0" || process.env.TINA_CLIENT;
+  "ea0fd6b0-29c8-4de1-a222-9b344c401363" || process.env.TINA_CLIENT;
 const tinaToken =
-  "8ed928ed67d1d5cff54debd3bf6e0d4eef2180a3" || process.env.TINA_TOKEN;
+  "25c2ccc791f9176d7b3207c35ee066482bd6da34" || process.env.TINA_TOKEN;
 
 export default defineConfig({
   branch,
