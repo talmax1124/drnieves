@@ -28,8 +28,8 @@ const resolvedImageWithDomain = new URL(
 const { title } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Knight Times News"
-  : "Knights Times News";
+  ? title + " | " + "Vida Plus Med"
+  : "Vida Plus Med";
 ---
 
 <!DOCTYPE html>
@@ -50,22 +50,22 @@ const makeTitle = title
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
       title={makeTitle}
-      snippet="Knight Times News is A News Club From NeoCity Academy"
+      snippet="Vida Plus Medical located in Kissimmee, Florida is a medical practice that specializes in the treatment of primary care."
       canonical={canonicalURL}
       twitter={{
-        creator: "@knighttimesnews",
-        site: "@knighttimesnews",
+        creator: "@vidaplusmed",
+        site: "@vidaplusmed",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Knight Times News`,
+          title: `Vida Plus Med`,
           image: resolvedImageWithDomain,
         },
         image: {
-          alt: "KT News",
+          alt: "Vida Plus Med",
         },
       }}
     />

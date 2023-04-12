@@ -1,38 +1,45 @@
 ---
-import heroImage from "assets/hero.svg";
 import Link from "@components/ui/link.astro";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <img
-      src={heroImage}
-      alt="Astronaut in the air"
-      class="w-full h-full object-cover"
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      decoding="async"
-    />
-  </div>
-  <div>
-    <h1
-      class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Creating News For Everyone
-    </h1>
-    <p class="text-lg mt-4 text-slate-600 max-w-xl">
-      Knight Times News is a school news club that creates news that matters.
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="https://forms.office.com/r/zHSQtC3gw6"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <i class="fas fa-file text-white w-5 h-5"></i>
-
-        Join Us!
-      </Link>
+  class="bg-[#1E4287]"
+  style="border-bottom-left-radius: 2em; border-bottom-right-radius: 2em;">
+  <div class="hero-container">
+    <div class="hero-left">
+      <div class="mt-auto">
+        <h1>
+          Giving <span class="text-[#40A681]">YOU</span> the care <span
+            class="text-[#40A681]">YOU</span
+          > need
+        </h1>
+        <div class="flex flex-row">
+          <a href=""
+            ><button
+              class="bg-[#E9B44C] border-solid border-1 border-[#E9B44C] rounded-md mr-2 hover:bg-[#c59b46] hover:border-[#c59b46]">
+              Schedule Appointment</button
+            ></a
+          >
+          <a href=""
+            ><button
+              class="bg-transparent rounded-md border-solid border-1 border-[#f7f0f5] hover:bg-[#f7f0f5] hover:text-slate-800">
+              Contact Us</button
+            ></a
+          >
+        </div>
+      </div>
+      <div class="mt-auto">
+        <p class="text-slate-200 flex flex-row align-center">
+          <img
+            src="https://res.cloudinary.com/cduoshop/image/upload/v1681314214/arrow-down-animated-1_bqacmf.gif" class="h-3 mb-auto mt-auto mr-1"
+          /> Scroll Down To Learn More
+        </p>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img
+        src="https://res.cloudinary.com/cduoshop/image/upload/v1681307577/b2439117-ab3c-411d-a073-8510759aea27_pulraj.png"
+      />
     </div>
   </div>
 </main>

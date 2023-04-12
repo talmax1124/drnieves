@@ -1,7 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   border: transparent;
   outline: transparent;
+  font-family: "Lato", sans-serif;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  .hero-left {
+    width: 52%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+    h1 {
+      font-size: 4em;
+      font-weight: 700;
+      margin-bottom: 0.5em;
+    }
+    button {
+      padding: 0.5em 1em;
+      font-size: 1em;
+      font-weight: 700;
+      transition: 0.25s ease;
+      cursor: pointer;
+    }
+  }
+  .hero-right {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    // Clip the image to the hero container
+
+    img {
+      width: 100%;
+      justify-content: flex-end;
+      border-bottom-right-radius: 2em;
+    }
+  }
 }

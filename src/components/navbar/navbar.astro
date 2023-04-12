@@ -16,20 +16,21 @@ const menuitems = [
 ---
 
 <header
-  class="flex flex-col lg:flex-row justify-between items-center mb-5 p-5 bg-slate-400">
-  <Astronav>
+  class="flex flex-col lg:flex-row justify-between items-center px-5 py-3 text-white bg-[#1E4287]">
+  <Astronav class="text-white">
     <div class="flex w-full lg:w-auto items-center justify-between">
       <a href="/" class="text-lg"
-        ><span class="font-bold text-slate-800">Plus</span><span
-          class="text-slate-500 ml-1">Vida Med</span
-        >
+        ><img
+          src="https://res.cloudinary.com/cduoshop/image/upload/v1681307577/logo-2_b0wccu.png"
+          class="h-12"
+        />
       </a>
       <div class="block lg:hidden">
-        <MenuIcon class="w-4 h-4 text-gray-800" />
+        <MenuIcon class="w-4 h-4 text-white" />
       </div>
     </div>
-    <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0">
-      <ul class="flex flex-col lg:flex-row lg:gap-3">
+    <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 text-white">
+      <ul class="flex flex-col lg:flex-row lg:gap-3 text-white">
         {
           menuitems.map((item, index) => (
             <>
@@ -45,7 +46,7 @@ const menuitems = [
                 <li>
                   <a
                     href={item.path}
-                    class="flex lg:px-3 py-2 text-gray-600 hover:text-gray-900">
+                    class="flex lg:px-3 py-2 text-white hover:text-gray-200">
                     {item.title}
                   </a>
                 </li>

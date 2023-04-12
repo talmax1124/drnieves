@@ -6,7 +6,7 @@ import sitemap from "@astrojs/sitemap";
 
 
 export default defineConfig({
-  site: "https://knighttimesnews.com",
+  site: "https://vidaplusmed.com",
   integrations: [
     tailwind(),
     image({
