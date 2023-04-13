@@ -1,10 +1,16 @@
 ---
-import Hero from "@components/hero.astro";
+// Layout
 import Layout from "@layouts/Layout.astro";
 
+// Components
+import Hero from "@components/hero.astro";
+import Stats from "@components/stats.astro";
+
+// Styles
 import "index.css";
 ---
 
 <Layout title="Home">
   <Hero />
+  <Stats />
 </Layout>
