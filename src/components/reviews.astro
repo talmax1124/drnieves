@@ -1,0 +1,142 @@
+<section class="bg-gray-100 section-styling">
+  <div class="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:mr-0 lg:pl-8 lg:pr-0">
+    <div
+      class="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:items-center lg:gap-x-16">
+      <div class="max-w-xl text-center sm:text-left">
+        <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+          Don't just take our word for it...
+          <br class="hidden sm:block lg:hidden" />
+          Read reviews from our customers
+        </h2>
+
+        <div class="hidden lg:mt-8 lg:flex lg:gap-4">
+          <button
+            class="prev-button rounded-full border border-[#14213D] p-3 text-[#14213D] hover:bg-[#14213D] hover:text-white">
+            <span class="sr-only">Previous Slide</span>
+            <svg
+              class="h-5 w-5 -rotate-180 transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+
+          <button
+            class="next-button rounded-full border border-[#14213D] p-3 text-[#14213D] hover:bg-[#14213D] hover:text-white">
+            <span class="sr-only">Next Slide</span>
+            <svg
+              class="h-5 w-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9 5l7 7-7 7"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="-mx-6 lg:col-span-2 lg:mx-0">
+        <div class="swiper-container !overflow-hidden">
+          <div class="swiper-wrapper">
+            <!-- Loop over the reviews in the review folder then show the review -->
+
+            <div class="swiper-slide">
+              <blockquote class="flex flex-col justify-between bg-white p-12">
+                <div>
+                  <div class="flex gap-0.5 text-orange-500">
+                    <!-- Loop over the value of the field star and show it with a  -->
+                    <center>
+                      <i class="fas fa-star"></i>
+                    </center>
+                  </div>
+
+                  <div class="mt-4">
+                    <p class="mt-4 leading-relaxed text-gray-500"></p>
+                  </div>
+                </div>
+
+                <footer class="mt-3 text-gray-500">&mdash;</footer>
+              </blockquote>
+            </div>
+
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 flex justify-center gap-4 lg:hidden">
+      <button
+        aria-label="Previous slide"
+        class="prev-button rounded-full border border-[#14213D] p-3 text-[#14213D] hover:bg-[#14213D] hover:text-white">
+        <svg
+          class="h-5 w-5 -rotate-180 transform"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9 5l7 7-7 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"></path>
+        </svg>
+      </button>
+
+      <button
+        aria-label="Next slide"
+        class="next-button rounded-full border border-[#14213D] p-3 text-[#14213D] hover:bg-[#14213D] hover:text-white">
+        <svg
+          class="h-5 w-5"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M9 5l7 7-7 7"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    new Swiper(".swiper-container", {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 25,
+      autoplay: {
+        delay: 5000,
+      },
+      breakpoints: {
+        640: {
+          centeredSlides: true,
+          slidesPerView: 1.25,
+        },
+        1024: {
+          centeredSlides: false,
+          slidesPerView: 1.5,
+        },
+      },
+      navigation: {
+        nextEl: ".next-button",
+        prevEl: ".prev-button",
+      },
+    });
+  });
+</script>

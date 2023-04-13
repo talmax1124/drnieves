@@ -6,15 +6,25 @@ import Layout from "@layouts/Layout.astro";
 import Hero from "@components/hero.astro";
 import Stats from "@components/stats.astro";
 import DidYouKnow from "@components/didyouknow.astro";
-import FeaturedBlog from "@components/featuredArticles.astro"
+import FeaturedBlog from "@components/featuredArticles.astro";
+import Reviews from "@components/reviews.astro";
 
 // Styles
 import "index.css";
 ---
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"
+></script>
 
 <Layout title="Home">
   <Hero />
   <Stats />
   <DidYouKnow />
   <FeaturedBlog />
+  <Reviews />
 </Layout>
