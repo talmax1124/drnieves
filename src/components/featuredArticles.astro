@@ -1,0 +1,64 @@
+---
+import { getCollection } from "astro:content";
+import { Picture } from "@astrojs/image/components";
+import Container from "@components/container.astro";
+
+// Filter blog entries with 'draft: false' & date before current date (published) then use the slice method to get the first 3 entries
+
+const publishedBlogEntries = await getCollection("blog", ({ data }) => {
+  return !data.draft && data.publishDate < new Date();
+});
+
+// Sort content entries by publication date
+publishedBlogEntries
+  .sort(function (a, b) {
+    return b.data.publishDate.valueOf() - a.data.publishDate.valueOf();
+  })
+  .slice(0, 3);
+---
+
+<main class="mt-16 p-[1em]">
+  <h1 class="text-4xl font-bold leading-snug tracking-tight mt-1">Blog</h1>
+  <p class="mb-4 font-medium">Get Tips & Advice To Achieve A Health & Happy Life</p>
+
+  <ul class="grid gap-16 w-full mx-auto">
+    {
+      publishedBlogEntries.map((blogPostEntry, index) => (
+        <li class="bg-slate-100 rounded-lg p-2 hover:bg-slate-200 duration-100">
+          <a href={`/blog/${blogPostEntry.slug}`}>
+            <div class="flex items-center">
+              <img
+                src={blogPostEntry.data.image}
+                alt={blogPostEntry.data.imageAlt}
+                loading={index <= 2 ? "eager" : "lazy"}
+                decoding={index <= 2 ? "sync" : "async"}
+                class="w-1/4 rounded-md mr-5"
+              />
+              <div>
+                <span class="text-blue-400 uppercase tracking-wider text-sm font-medium ">
+                  {blogPostEntry.data.category}
+                </span>
+
+                <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                  {blogPostEntry.data.title}
+                </h2>
+
+                <div class="flex  mt-3">
+                  <span class="text-gray-400 mr-2">
+                    {blogPostEntry.data.author}
+                  </span>
+                  <span class="text-gray-400 mr-2">• </span>
+                  <time
+                    class="text-gray-400"
+                    datetime={blogPostEntry.data.publishDate.toISOString()}>
+                    {blogPostEntry.data.publishDate.toDateString()}
+                  </time>
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</main>

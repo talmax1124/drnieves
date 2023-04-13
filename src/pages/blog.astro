@@ -21,14 +21,15 @@ publishedBlogEntries.sort(function (a, b) {
     <Sectionhead>
       <Fragment slot="title">Our Blog</Fragment>
       <Fragment slot="desc">
-        We write about anything and everything related to our school and local events.
+        We write about anything and everything related to our school and local
+        events.
       </Fragment>
     </Sectionhead>
     <main class="mt-16">
       <ul class="grid gap-16 max-w-4xl mx-auto">
         {
           publishedBlogEntries.map((blogPostEntry, index) => (
-            <li>
+            <li class="bg-slate-100 rounded-lg p-2 hover:bg-slate-200 duration-100">
               <a href={`/blog/${blogPostEntry.slug}`}>
                 <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
                   <Picture
