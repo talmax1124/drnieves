@@ -57,7 +57,7 @@
     background-color: white;
     width: 50%;
 
-     .icon {
+    .icon {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -70,7 +70,6 @@
         margin-bottom: 0.5em;
       }
     }
-
   }
   .stats-right {
     width: 50%;
@@ -93,5 +92,26 @@
       font-weight: 400;
       margin-bottom: 0.5em;
     }
+  }
+}
+
+.didyouknow-container {
+  padding: 1em;
+  margin: 1.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+
+  #fact {
+    font-size: 2em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
   }
 }
