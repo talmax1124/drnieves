@@ -24,7 +24,7 @@ publishedBlogEntries
   <ul class="grid gap-16 w-full mx-auto">
     {
       publishedBlogEntries.map((blogPostEntry, index) => (
-        <li class="bg-slate-100 rounded-lg p-2 hover:bg-slate-200 duration-100">
+        <li class="bg-slate-100 dark:bg-slate-500 dark:hover:bg-slate-600 rounded-lg p-2 hover:bg-slate-200 duration-100">
           <a href={`/blog/${blogPostEntry.slug}`}>
             <div class="flex items-center">
               <img

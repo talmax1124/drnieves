@@ -8,6 +8,11 @@
   font-family: "Lato", sans-serif;
 }
 
+body.dark {
+  background-color: #243b4a;
+  color: white;
+}
+
 .hero-container {
   display: flex;
   flex-direction: row;
@@ -51,7 +56,6 @@
   justify-content: space-between;
 }
 .stats-container .stats-left {
-  background-color: white;
   width: 50%;
 }
 .stats-container .stats-left svg {
