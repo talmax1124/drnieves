@@ -54,13 +54,14 @@
   background-color: white;
   width: 50%;
 }
+.stats-container .stats-left svg {
+  height: 2.5rem;
+}
 .stats-container .stats-left .icon {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0.5em;
-  border-radius: 50%;
 }
 .stats-container .stats-left .icon p {
   font-size: 1.1em;
@@ -100,8 +101,108 @@
   font-weight: 700;
   margin-bottom: 0.5em;
 }
+.didyouknow-container #category {
+  width: -moz-fit-content !important;
+  width: fit-content !important;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
+}
 .didyouknow-container #fact {
   font-size: 2em;
   font-weight: 400;
   margin-bottom: 0.5em;
+}
+
+@media (max-width: 1000px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .hero-container .hero-left {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+  }
+  .hero-container .hero-left .sta {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero-container .hero-left h1 {
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  .hero-container .hero-left button {
+    padding: 0.5em 1em;
+    font-size: 1em;
+    font-weight: 700;
+    transition: 0.25s ease;
+    cursor: pointer;
+    margin-bottom: 1em;
+  }
+  .hero-container .hero-right {
+    display: none;
+  }
+  .stats-container {
+    padding: 1em;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+  }
+  .stats-container .stats-left {
+    background-color: white;
+    width: 100%;
+  }
+  .stats-container .stats-left div {
+    margin-bottom: 1em;
+  }
+  .stats-container .stats-left svg {
+    height: 1.5rem;
+  }
+  .stats-container .stats-left .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+    border-radius: 50%;
+  }
+  .stats-container .stats-left .icon p {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+  .stats-container .stats-right {
+    width: 100%;
+    padding: 0.25em;
+    text-align: right;
+  }
+  .stats-container .stats-right h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  .stats-container .stats-right h3 {
+    font-size: 4em;
+    font-weight: 700;
+  }
+  .stats-container .stats-right p {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+  .didyouknow-container #category {
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 }/*# sourceMappingURL=index.css.map */
