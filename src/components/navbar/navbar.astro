@@ -56,7 +56,7 @@ const menuitems = [
         }
         <li class="button-small-theme">
           <button
-            class="theme-button bg-gray-400 dark:bg-slate-600 px-4 py-1 rounded-md w-full"
+            class="theme-button1 bg-gray-400 dark:bg-slate-600 px-4 py-1 rounded-md w-full"
             >Light Mode</button
           >
         </li>
@@ -112,5 +112,47 @@ const menuitems = [
     localStorage.setItem("theme", theme);
     // Update theme button text
     themeButton.textContent = "Light mode";
+  }
+</script>
+
+<script>
+  let themeButton1 = document.querySelector(".theme-button1");
+  let theme = localStorage.getItem("theme");
+
+  // Check if a theme is stored in localStorage
+  if (theme === "dark") {
+    enableDarkMode();
+  } else {
+    enableLightMode();
+  }
+
+  // Add event listener to theme button
+  themeButton1.addEventListener("click", function () {
+    // Toggle between dark and light mode
+    if (theme === "dark") {
+      enableLightMode();
+    } else {
+      enableDarkMode();
+    }
+  });
+
+  function enableDarkMode() {
+    // Add "dark" class to body
+    document.body.classList.add("dark");
+    // Update theme variable and localStorage
+    theme = "dark";
+    localStorage.setItem("theme", theme);
+    // Update theme button text
+    themeButton1.textContent = "Dark mode";
+  }
+
+  function enableLightMode() {
+    // Remove "dark" class from body
+    document.body.classList.remove("dark");
+    // Update theme variable and localStorage
+    theme = "light";
+    localStorage.setItem("theme", theme);
+    // Update theme button text
+    themeButton1.textContent = "Light mode";
   }
 </script>
