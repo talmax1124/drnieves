@@ -118,7 +118,14 @@ body.dark {
   margin-bottom: 0.5em;
 }
 
+.button-small-theme {
+  display: none;
+}
+
 @media (max-width: 1000px) {
+  .button-small-theme {
+    display: block;
+  }
   .hero-container {
     display: flex;
     flex-direction: column;

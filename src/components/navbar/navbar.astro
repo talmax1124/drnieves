@@ -27,6 +27,7 @@ const menuitems = [
       </a>
       <div class="block lg:hidden">
         <MenuIcon class="w-4 h-4 text-white" />
+        <i id="themebuttonicon" class="ml-2"></i>
       </div>
     </div>
     <MenuItems class="hidden w-full lg:w-auto mt-2 lg:flex lg:mt-0 text-white">
@@ -54,12 +55,21 @@ const menuitems = [
             </>
           ))
         }
+        <li class=" button-small-theme ">
+          <button
+            class="theme-button bg-gray-400 dark:bg-slate-600 px-4 py-1 rounded-md w-full"
+            >Light Mode</button
+          >
+        </li>
       </ul>
     </MenuItems>
   </Astronav>
   <div>
     <div class="hidden lg:flex items-center gap-4">
-      <button class="theme-button bg-gray-400 dark:bg-slate-600 px-4 py-1 rounded-md">Light Mode</button>
+      <button
+        class="theme-button bg-gray-400 dark:bg-slate-600 px-4 py-1 rounded-md"
+        >Light Mode</button
+      >
     </div>
   </div>
 </header>
@@ -103,5 +113,47 @@ const menuitems = [
     localStorage.setItem("theme", theme);
     // Update theme button text
     themeButton.textContent = "Light mode";
+  }
+</script>
+
+<script>
+  let themeButtonIcon = document.querySelector(".themebuttonicon");
+  let theme = localStorage.getItem("theme");
+
+  // Check if a theme is stored in localStorage
+  if (theme === "dark") {
+    enableDarkMode();
+  } else {
+    enableLightMode();
+  }
+
+  // Add event listener to theme button
+  themeButtonIcon.addEventListener("click", function () {
+    // Toggle between dark and light mode
+    if (theme === "dark") {
+      enableLightMode();
+    } else {
+      enableDarkMode();
+    }
+  });
+
+  function enableDarkMode() {
+    // Add "dark" class to body
+    document.body.classList.add("dark");
+    // Update theme variable and localStorage
+    theme = "dark";
+    localStorage.setItem("theme", theme);
+    // Update theme button text
+  }
+
+  function enableLightMode() {
+    // Remove "dark" class from body
+    document.body.classList.remove("dark");
+    // Update theme variable and localStorage
+    theme = "light";
+    localStorage.setItem("theme", theme);
+    // Update theme button text
+
+    // add class of fas fa-sun to themeButtonIcon
   }
 </script>

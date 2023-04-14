@@ -129,7 +129,16 @@ body.dark {
   }
 }
 
+.button-small-theme {
+  display: none;
+}
+
 @media (max-width: 1000px) {
+
+  .button-small-theme {
+    display: block;
+  }
+
   .hero-container {
     display: flex;
     flex-direction: column;
