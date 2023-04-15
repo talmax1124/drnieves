@@ -1,0 +1,41 @@
+---
+// Layout
+import Layout from "@layouts/Layout.astro";
+import Sectionhead from "@components/Sectionhead.astro";
+---
+
+<Layout title="About">
+  <Sectionhead>
+    <Fragment slot="title">About Us</Fragment>
+    <Fragment slot="desc">Just a bit about us and our team</Fragment>
+  </Sectionhead>
+
+  <main>
+    <div class="about-doctor-container">
+      <div class="about-img">
+        <img
+          src="https://res.cloudinary.com/dcix3cz9j/image/upload/v1681582654/Photo_2_mjlijo.jpg"
+          class="rounded-md"
+        />
+      </div>
+      <div class="about-txt">
+        <span
+          ><h1 class="text-6xl font-bold">Dr. Edwin Nieves</h1>
+          <h1 class="text-slate-400 mb-4">Primary Doctor</h1></span
+        >
+        <p>
+          Dr. Edwin J. Nieves was born in Puerto Rico. He obtained his medical
+          degree at PUCMM in Dominican Republic. Dr. Edwin J. Nieves later moved
+          to Puerto Rico and completed the Medical Internship Program at Manatí
+          Medical Center. He has over 7 years of experience in the fields of
+          family and emergency medicine. He focused on the health care of the
+          elderly to promote health by preventing and treating diseases and
+          disabilities. Dr. Edwin J. Nieves enjoys building relationship and
+          working with all his patients to help them establish their goals and
+          needs giving a personalized care by listening to their medical
+          concerns and encouraging their involvement in important decisions.
+        </p>
+      </div>
+    </div>
+  </main>
+</Layout>

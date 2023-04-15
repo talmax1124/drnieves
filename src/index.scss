@@ -133,8 +133,58 @@ body.dark {
   display: none;
 }
 
-@media (max-width: 1000px) {
+.about-doctor-container {
+  padding: 1em;
+  margin: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+  .about-txt {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+
+    p {
+      font-size: 1.1em;
+      font-weight: 400;
+      margin-bottom: 0.5em;
+    }
+  }
+  .about-img {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    // Clip the image to the hero container
+
+    img {
+      width: 100%;
+      justify-content: flex-end;
+    }
+  }
+}
+
+#logo-carousel {
+  animation: marquee 15s linear infinite 0s;
+  margin-top: 1em;
+  img {
+    height: 15vh;
+    margin-right: 1em;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 1000px) {
   .button-small-theme {
     display: block;
   }
