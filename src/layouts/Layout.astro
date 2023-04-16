@@ -45,7 +45,13 @@ const makeTitle = title ? title + " | " + "Vida Plus Med" : "Vida Plus Med";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerPolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerPolicy="no-referrer"
+    />
 
     <!-- <link rel="preload" as="image" href={src} alt="Hero" /> -->
     <SEO
@@ -69,11 +75,27 @@ const makeTitle = title ? title + " | " + "Vida Plus Med" : "Vida Plus Med";
         },
       }}
     />
-  </head>
+
+    <script
+      id="setmore_script"
+      type="text/javascript"
+      src="https://storage.googleapis.com/fullintegration-live/webComponentAppListing/Container/setmoreIframeLive.js"
+    ></script></head
+  ><a
+    style="float:none; position: fixed; right: -2px; top: 25%; display: block; z-index: 20000"
+    id="Setmore_button_iframe"
+    href="https://booking.setmore.com/scheduleappointment/1ca5b9c8-4704-4daf-aa8f-9abcddd80eea"
+    ><img
+      border="none"
+      src="https://storage.googleapis.com/full-assets/setmore/images/1.0/Calendar/Setmore-Book-Now.png"
+      alt="Book an appointment with Edwin Nieves using Setmore"
+    /></a
+  >
+
   <body>
     <Navbar />
     <slot />
-    <Footer/>
+    <Footer />
     <style is:global>
       img {
         content-visibility: auto;

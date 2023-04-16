@@ -92,6 +92,48 @@ body.dark {
   margin-bottom: 0.5em;
 }
 
+.cat-cards-cont h1 {
+  font-size: clamp(2.2em, 60%, 4em);
+  color: white;
+  font-weight: bold;
+  margin-top: 0.2em;
+}
+.cat-cards-cont p {
+  font-size: clamp(1.2em, 60%, 2em);
+}
+.cat-cards-cont button {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.cat-cards-1 {
+  background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681675847/Untitled_design-14_wgfxki.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cat-cards-2 {
+  background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676143/Untitled_design-15_qjjpli.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cat-cards-3 {
+  background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676301/Untitled_design-16_ju5mvd.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.cat-cards-4 {
+  background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676585/Untitled_design-18_ftytq3.png");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .didyouknow-container {
   padding: 1em;
   margin: 1.5em;
@@ -255,6 +297,63 @@ body.dark {
     font-size: 1.1em;
     font-weight: 400;
     margin-bottom: 0.5em;
+  }
+  .cat-cards-cont h1 {
+    font-size: clamp(2.2em, 60%, 4em);
+    color: white;
+    font-weight: bold;
+    margin-top: 0.2em;
+  }
+  .cat-cards-cont p {
+    font-size: clamp(1.2em, 60%, 2em);
+    font-weight: 400;
+  }
+  .cat-cards-cont button {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  /*  
+
+    background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681675847/Untitled_design-14_wgfxki.png");
+  }
+
+    background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676143/Untitled_design-15_qjjpli.png");
+  }
+
+
+    background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676301/Untitled_design-16_ju5mvd.png");
+
+
+
+
+    background-image: url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676585/Untitled_design-18_ftytq3.png");
+
+
+
+    */
+  .cat-cards-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716), rgba(0, 0, 0, 0.631)), url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681675847/Untitled_design-14_wgfxki.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cat-cards-2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716), rgba(0, 0, 0, 0.631)), url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676143/Untitled_design-15_qjjpli.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cat-cards-3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716), rgba(0, 0, 0, 0.631)), url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676301/Untitled_design-16_ju5mvd.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .cat-cards-4 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.716), rgba(0, 0, 0, 0.631)), url("https://res.cloudinary.com/dcix3cz9j/image/upload/v1681676585/Untitled_design-18_ftytq3.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   .didyouknow-container #category {
     width: -moz-fit-content !important;
