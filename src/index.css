@@ -361,4 +361,31 @@ body.dark {
     padding-left: 1em;
     padding-right: 1em;
   }
+  .about-doctor-container {
+    padding: 1em;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .about-doctor-container .about-txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .about-doctor-container .about-txt p {
+    font-size: 1.1em;
+    font-weight: 400;
+    margin-bottom: 0.5em;
+  }
+  .about-doctor-container .about-img {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .about-doctor-container .about-img img {
+    width: 100%;
+    justify-content: flex-end;
+  }
 }/*# sourceMappingURL=index.css.map */

@@ -3,7 +3,6 @@
   "include": ["src/**/*"],
   "exclude": ["node_modules", ".astro", ".cache", "dist"],
   "compilerOptions": {
-    "strictNullChecks": true,
     "baseUrl": "src",
     "paths": {
       "@lib/*": ["lib/*"],

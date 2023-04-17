@@ -1,0 +1,71 @@
+---
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="FAQs">
+  <div class="container mx-auto py-10">
+    <h1 class="text-center text-3xl font-bold mb-8">
+      Frequently Asked Questions
+    </h1>
+    <div class="accordion">
+      <div class="accordion-item">
+        <div
+          class="accordion-header flex items-center bg-white rounded-lg shadow-sm cursor-pointer p-4">
+          <h2 class="accordion-title flex-1">
+            What types of medical services do you offer?
+          </h2>
+          <button class="accordion-toggle w-6 h-6"></button>
+        </div>
+        <div class="accordion-body bg-white rounded-b-lg shadow-sm p-4">
+          <p>
+            We offer a wide range of medical services, including general
+            check-ups, vaccinations, lab testing, and treatment for various
+            conditions.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div
+          class="accordion-header flex items-center bg-white rounded-lg shadow-sm cursor-pointer p-4">
+          <h2 class="accordion-title flex-1">
+            Do I need to make an appointment?
+          </h2>
+          <button class="accordion-toggle w-6 h-6"></button>
+        </div>
+        <div class="accordion-body bg-white rounded-b-lg shadow-sm p-4">
+          <p>
+            Yes, we recommend making an appointment to ensure that you receive
+            prompt and personalized medical care.
+          </p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div
+          class="accordion-header flex items-center bg-white rounded-lg shadow-sm cursor-pointer p-4">
+          <h2 class="accordion-title flex-1">
+            How do I schedule an appointment?
+          </h2>
+          <button class="accordion-toggle w-6 h-6"></button>
+        </div>
+        <div class="accordion-body bg-white rounded-b-lg shadow-sm p-4">
+          <p>
+            You can schedule an appointment by calling us at (555) 123-4567 or
+            by filling out our online appointment request form.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const accordionToggles = document.querySelectorAll(".accordion-toggle");
+
+    accordionToggles.forEach((toggle) => {
+      toggle.addEventListener("click", () => {
+        toggle
+          .closest(".accordion-item")
+          .classList.toggle("accordion-item--open");
+      });
+    });
+  </script>
+</Layout>

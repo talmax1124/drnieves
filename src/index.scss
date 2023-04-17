@@ -416,4 +416,36 @@ body.dark {
       padding-right: 1em;
     }
   }
+
+  .about-doctor-container {
+    padding: 1em;
+    margin: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .about-txt {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      p {
+        font-size: 1.1em;
+        font-weight: 400;
+        margin-bottom: 0.5em;
+      }
+    }
+    .about-img {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      // Clip the image to the hero container
+
+      img {
+        width: 100%;
+        justify-content: flex-end;
+      }
+    }
+  }
 }
