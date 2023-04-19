@@ -34,9 +34,6 @@ dependencies:
   astro-seo:
     specifier: ^0.7.0
     version: 0.7.0
-  prettier-plugin-astro:
-    specifier: ^0.8.0
-    version: 0.8.0
   sass:
     specifier: ^1.58.0
     version: 1.58.0
@@ -9240,27 +9237,6 @@ packages:
       find-yarn-workspace-root2: 1.2.16
       path-exists: 4.0.0
       which-pm: 2.0.0
-    dev: false
-
-  /prettier-plugin-astro@0.7.1:
-    resolution: {integrity: sha512-ySeyXHIXNZpbqZCcj8eoWl6z2UDHYl6DPgN7z9E1HElG8aVlC2WQNjfcpcSBuF4jwwo+HHi44pun/Hlr+h8OsA==}
-    engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
-    requiresBuild: true
-    dependencies:
-      '@astrojs/compiler': 0.31.3
-      prettier: 2.8.1
-      sass-formatter: 0.7.5
-      synckit: 0.8.4
-    dev: false
-
-  /prettier-plugin-astro@0.8.0:
-    resolution: {integrity: sha512-kt9wk33J7HvFGwFaHb8piwy4zbUmabC8Nu+qCw493jhe96YkpjscqGBPy4nJ9TPy9pd7+kEx1zM81rp+MIdrXg==}
-    engines: {node: ^14.15.0 || >=16.0.0, pnpm: '>=7.14.0'}
-    dependencies:
-      '@astrojs/compiler': 1.0.1
-      prettier: 2.8.7
-      sass-formatter: 0.7.5
-      synckit: 0.8.4
     dev: false
 
   /prettier@2.8.1:
