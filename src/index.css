@@ -136,11 +136,24 @@ body.dark {
 
 .didyouknow-container {
   padding: 1em;
-  margin: 1.5em;
+  margin-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.didyouknow-container hr {
+  width: 100%;
+  margin-bottom: 1em;
+  stroke: 1px solid black;
+  background-color: black;
+  height: 0.5px;
+}
+.didyouknow-container span {
+  margin-bottom: 3px;
+  margin-top: 3px;
 }
 .didyouknow-container h1 {
   font-size: 2.5em;
