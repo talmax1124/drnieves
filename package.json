@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "astro dev --port 4341 --open",
-    "start": "astro dev --port 4341 --open",
+    "start": "astro dev --port 4341 --open --host",
     "build": "tinacms build && astro build",
     "preview": "astro preview",
     "astro": "astro"
