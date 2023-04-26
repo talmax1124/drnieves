@@ -11,7 +11,7 @@ const blogCollection = defineCollection({
     image: z.string().optional().default(''),
     imageAlt: z.string().optional().default('Blog Image'),
     body: z.string().optional(),
-    publishDate: z.string().transform((str: string | number | Date) => new Date(str)) ,
+    publishDate: z.date().default(() => new Date()),
     author: z.string().default('KnightTimes'),
     category: z.string().default('News').optional(),
     tags: z.array(z.string()).default([]).optional(),

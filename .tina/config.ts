@@ -29,6 +29,7 @@ export default defineConfig({
           return {
             draft: false,
             tags: ["post"],
+            date: new Date().toISOString(),
           };
         },
         name: "blog",
