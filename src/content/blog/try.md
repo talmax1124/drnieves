@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Preview Article
 snippet: >-
   This is a preview of the article you are about to create. It will be visible
