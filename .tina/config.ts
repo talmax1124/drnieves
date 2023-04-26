@@ -39,7 +39,6 @@ export default defineConfig({
             type: "boolean",
             name: "draft",
             label: "Draft",
-            default: false,
           },
           {
             type: "string",
