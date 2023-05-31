@@ -1,11 +1,59 @@
 ---
 // Layout
 import Layout from "@layouts/Layout.astro";
+
+// About collection
+import { getCollection } from "astro:content";
+import { Picture } from "@astrojs/image/components";
+
+// Get the about collection
+const AboutEntries = await getCollection("about");
+
+// Fragment
 ---
 
 <Layout title="About">
   <Fragment slot="title">About Us</Fragment>
   <Fragment slot="desc">Just a bit about us and our team</Fragment>
+
+  <ul>
+    {
+      AboutEntries.map((about, index) => (
+        <li class="bg-slate-100 rounded-lg p-2 hover:bg-slate-200 duration-100">
+          <div class="grid md:grid-cols-2 gap-5 md:gap-10 items-center">
+            <Picture
+              src={about.data.image}
+              alt={about.data.imageAlt}
+              sizes="(max-width: 800px) 100vw, 800px"
+              widths={[200, 400, 800]}
+              aspectRatio="16:9"
+              background="#ffffff"
+              fit="cover"
+              position="center"
+              loading={index <= 2 ? "eager" : "lazy"}
+              decoding={index <= 2 ? "sync" : "async"}
+              class="w-full rounded-md"
+            />
+            <div>
+              <span class="text-blue-400 uppercase tracking-wider text-sm font-medium">
+                {about.data.staff}
+              </span>
+
+              <h2 class="text-3xl font-semibold leading-snug tracking-tight mt-1 ">
+                {about.data.title}
+              </h2>
+
+              <div class="flex gap-2 mt-3">
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </li>
+      ))
+    }
+  </ul>
 
   <main>
     <div class="about-doctor-container">
@@ -35,7 +83,5 @@ import Layout from "@layouts/Layout.astro";
       </div>
     </div>
   </main>
-  <div>
-    
-  </div>
+  <div></div>
 </Layout>

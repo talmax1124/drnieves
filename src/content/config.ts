@@ -18,6 +18,17 @@ const blogCollection = defineCollection({
   }),
 });
 
+const aboutCollection = defineCollection({
+  schema: z.object({
+    staff: z.string(),
+    title: z.string(),
+    biography: z.string().optional(),
+    image: z.string().optional().default(''),
+    imageAlt: z.string().optional().default('Staff Image'),
+  }),
+});
+
+
 // const teamCollection = defineCollection({
 //   schema: z.object({
 //     draft: z.boolean(),
@@ -35,5 +46,6 @@ const blogCollection = defineCollection({
 //    This key should match your collection directory name in "src/content"
 export const collections = {
   'blog': blogCollection,
+  'about': aboutCollection,
   // 'team': teamCollection,
 };

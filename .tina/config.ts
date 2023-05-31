@@ -1,7 +1,8 @@
 import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
-const branch =  "master" || process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF;
+const branch =
+  "master" || process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF;
 
 const tinaClient =
   "2b333a57-74f3-408e-8429-cf45c2f61392" || process.env.TINA_CLIENT;
@@ -96,6 +97,50 @@ export default defineConfig({
             name: "body",
             label: "Body",
             isBody: true,
+          },
+        ],
+      },
+      {
+        name: "reviews",
+        label: "Reviews",
+        path: "src/content/reviews",
+        fields: [],
+      },
+      {
+        name: "about",
+        label: "About",
+        path: "src/content/about",
+        fields: [
+          {
+            type: "string",
+            name: "staff",
+            label: "Staff",
+            description: "The staff member",
+          },
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            description: "The title of the staff member",
+          },
+          {
+            type: "string",
+            name: "biography",
+            label: "Biography",
+            description: "The biography of the staff member",
+          },
+
+          {
+            type: "image",
+            name: "image",
+            label: "Image",
+            description: "The image of the staff member",
+          },
+          {
+            type: "string",
+            name: "imageAlt",
+            label: "Image Alt",
+            description: "The alt text of the staff member image",
           },
         ],
       },
