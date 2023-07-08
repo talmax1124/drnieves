@@ -104,7 +104,20 @@ export default defineConfig({
         name: "reviews",
         label: "Reviews",
         path: "src/content/reviews",
-        fields: [],
+        fields: [
+          {
+            type: "string",
+            name: "title",
+            label: "Title",
+            description: "The title of the review",
+          },
+          {
+            type: "string",
+            name: "author",
+            label: "Author",
+            description: "The author of the review",
+          },
+        ],
       },
       {
         name: "about",
